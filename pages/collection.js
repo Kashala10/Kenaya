@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Col, Container, Button, Row, Card } from 'react-bootstrap'
 import Slider from 'react-slick'
-import Layout from './components/Layout'
+import Layout from '../components/Layout'
 import Styles from '../styles/Collection.module.css'
 
 export default function Collection() {
@@ -42,7 +42,7 @@ export default function Collection() {
                                             <img width="30%" src="./img/JasminePlaysuit2.jpg"></img>
                                 </div>
                                 <div className={Styles.ContentCollection} >
-                                            <h3 className={Styles.CollectionName}>Oasis Collection</h3>
+                                            <h3 className={Styles.CollectionName}>Blossom Collection</h3>
                                             <p className={Styles.Text}>Oasis was our first collections, where we use high stretchy and soft rib knit fabric that make the items  adabptable for  most body types. We decide to create this trendy and elegant item of this collections that will be suitable for any summer vacations, party, cocktail, beach or just casual wear. </p>
                                             <a className="btn">View Collection</a>
                                 </div>
