@@ -13,11 +13,11 @@ export default function Home() {
 					<div className={Styles.TextContainer}>
 						<h3>Best Collection</h3>
 						<h1>The Concious Micro Collection</h1>
-						<Link href="/">
+						{/* <Link href="/">
 							<div className={Styles.PlayerIcon}>
 								<Play />
 							</div>
-						</Link>
+						</Link> */}
 					</div>
 					
 				</Container>
