@@ -39,7 +39,7 @@ export default function Collection() {
 
                              <div className={Styles.Slide}>
                                 <div className={Styles.Image} > 
-                                            <img width="30%" src="./img/JasminePlaysuit2.jpg"></img>
+                                            <img src="./img/JasminePlaysuit2.jpg"></img>
                                 </div>
                                 <div className={Styles.ContentCollection} >
                                             <h3 className={Styles.CollectionName}>Blossom Collection</h3>
