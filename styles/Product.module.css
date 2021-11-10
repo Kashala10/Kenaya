@@ -1,0 +1,101 @@
+.ProductSection{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  
+}
+
+.ProductSection .ProductContainer{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    position: relative;
+}
+
+.ProductContainer .ImageContainer{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    position: relative;
+}
+
+.ProductContainer .ImageContainer img{
+    height: 100%;
+    object-fit: cover;
+    max-width: 500px;
+    width: 100%;
+    display: block;
+}
+
+.ProductContainer .Content{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    position: relative;
+}
+.ProductContainer .Content h3{
+    font-family: var(--font-family-poppins);
+    color: var(--brown-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+.ProductContainer .Content .Collection{
+    font-family: var(--font-family-poppins);
+    color: var(--brown-color);
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+.ProductContainer .Content .Price{
+    font-family: var(--font-family-poppins);
+    color: var(--brown-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.ProductContainer .Content .Description{
+    font-family: var(--font-family-poppins);
+    color: var(--brown-color);
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+.ProductContainer .Content .Wishlist{
+    font-family: var(--font-family-poppins);
+    color: var(--brown-color);
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 18px;
+    background-color: #fff;
+    border: none;
+}
+
+.ProductContainer .Content Button {
+ margin-top: 1.5em ;
+}
+
+.ProductContainer .Content .ButtonGroup{
+    padding-top: 2em;
+}
+
+.ProductContainer .Content .ButtonGroup .Btn{
+    /* width: 100%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    position: relative; */
+    margin: 0px auto;
+    border: 0px;
+    font-family: var(--font-family-poppins);
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--brown-color);
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin-right: 20px;
+}

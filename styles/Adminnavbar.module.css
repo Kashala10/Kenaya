@@ -1,0 +1,60 @@
+.Nav{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    background-color:var(--brown-color);
+    width: 90%;
+    height: 100%;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  
+
+
+}
+.NavLink{
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-family-poppins);
+    font-weight: 500;
+  
+}
+
+.Nav ul li {
+    text-decoration: none;
+    margin-top: 25px;
+    font-size: 18px;
+    padding: 8px;
+    list-style:none;
+}
+
+.Nav ul li a {
+    text-decoration: none;
+  
+}
+
+.NavLink:hover{
+    opacity: 80% ;
+    color: black;
+}
+
+.Logout {
+    font-family: var(--font-family-poppins);
+    background-color: var(--brown-color);
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 26px;
+    padding: 0.5em 3em;
+    margin: 0px auto;
+   
+}
+
+@media screen and (max-width: 940px) {
+    .NavLink{
+        padding-left: unset;
+    }
+}
+

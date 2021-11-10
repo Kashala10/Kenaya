@@ -2,7 +2,7 @@ import { Col, Container, Row, Table, Button } from 'react-bootstrap'
 import Layout from '../components/Layout'
 import Styles from '../styles/Wishlist.module.css'
 import { Bag, Bin } from '../components/icons'
-
+import { UserNavbar } from '../components'
 
 
 export default function Whishlist(){
@@ -13,7 +13,7 @@ return(
             <Container>
                 <Row>
                     <Col md={5}>
-                    <div></div>
+                    <UserNavbar/>
                     </Col>
                     
                     <Col md={7} >

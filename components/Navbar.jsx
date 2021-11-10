@@ -1,9 +1,15 @@
 import Link from 'next/link'
 import { Navbar, Container, Nav } from 'react-bootstrap'
+import { toast } from 'react-toastify'
+import { useSelector } from 'react-redux'
 import { Bag, Profile, Search } from './icons'
 import Styles from '../styles/Navbar.module.css'
 
 const Navigation = () => {
+
+    const cart = useSelector(state => state.cart)
+    // console.log(cart.length)
+
     return (
         <Navbar className={Styles.Nav} collapseOnSelect expand="lg" variant="light" >
             <Container>
@@ -32,14 +38,17 @@ const Navigation = () => {
 
                     <Nav>
                         <Link href="/cart">
-                            <a className={Styles.NavLink}><Bag /></a>
+                            <a className={Styles.NavLink}>
+                                <Bag />
+                                <span className={Styles.Badge}>{cart.length}</span>
+                            </a>
                         </Link>
-                        <Link href="/user">
+                        <Link href="/auth">
                             <a className={Styles.NavLink}><Profile /></a>
                         </Link>
-                        <Link href="/search">
-                            <a className={Styles.NavLink}><Search /></a>
-                        </Link>
+                        
+                        <a onClick={() => toast.error('Product Search currently unavailable')} className={Styles.NavLink}><Search /></a>
+                        
                     </Nav>
                 </Navbar.Collapse>
             </Container>

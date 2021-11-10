@@ -32,3 +32,25 @@ a {
   border-color: var(--brown-color)!important;
   color: #fff!important;
 }
+
+.StripeCheckout{
+  margin: 0px auto!important;
+  border: 0px!important;
+  font-family: var(--font-family-poppins)!important;
+  font-size: 20px!important;
+  font-weight: 600!important;
+  background-color: var(--brown-color)!important;
+  background: var(--brown-color)!important;
+  color: #fff!important;
+  border-radius: 20px!important;
+  padding: 5px 20px!important;
+  margin-right: 20px!important;
+}
+.StripeCheckout span{
+  background-color: var(--brown-color)!important;
+  background: var(--brown-color)!important;
+  color: #fff!important;
+  border: none!important;
+  box-shadow: unset!important;
+  font-size: 20px!important;
+}

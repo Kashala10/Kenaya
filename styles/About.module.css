@@ -5,8 +5,8 @@
 
 .AboutSection .CardContainer{
     cursor: pointer;
-    width: 350px;
-    height: 490px;
+    width: 450px;
+    height: 590px;
     perspective: 600;
     position: relative;
 }
@@ -46,8 +46,10 @@
 .AboutSection .BackText{
     color: #ffff;
     text-align: justify;
-    padding: 15px;
-    font-size: 14px;
+    padding: 25px;
+    font-size: 17px;
+    line-height: 1.7;
+
 }
 
 .AboutSection .AboutTitle{
