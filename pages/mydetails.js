@@ -3,14 +3,6 @@ import { UserNavbar } from '../components'
 import Layout from '../components/Layout'
 import Styles from '../styles/Mydetails.module.css'
 
-import Link from 'next/link'
-import { toast } from 'react-toastify'
-import { useSelector } from 'react-redux'
-
-import { useRouter } from 'next/router'
-import { useState, useEffect } from 'react'
-
-import { useDispatch } from 'react-redux'
 
 import { toast } from 'react-toastify'
 
@@ -20,60 +12,7 @@ import { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 
 export default function Mydetails() {
-<<<<<<< HEAD
        
-=======
-
-
-        const dispatch = useDispatch()
-        const { query } = useRouter();
-        const [user, setUser] = useState({
-            id: '',
-            name: '',
-            phone: '',
-            birthday: '',
-            email: '',
-            city: '',
-            state: '',      
-            adress: '',
-            adress2: '',
-            avatar: '',
-            zip: ''
-        })
-        
-        useEffect(() => {
-    
-            if (query.id && user) {
-    
-                usersService.get(query.id)
-                .then(res => {
-                    // console.log(res.data)
-                    setUser(res.data)
-                })
-                .catch(err => {
-                    toast.error("Failed to load user");
-                    console.log(err)
-                })
-            } 
-    
-        },[query.id])
-
-        const onSaveChangesClick  = async() => {
-            await dispatch(saveUser({
-                id: uuidv4(),
-                name: user.name,
-                mobile: user.mobile,
-                birthday: user.birthday,
-                email: user.email,
-                adress: user.adress,
-                adress2: user.adress2,
-                avatar: user.avatar,
-                zip: user.zip
-            }))
-            toast.success("User Info Save")
-        }
-
->>>>>>> 3aa099a66293d361ced62b674ae8701173594f1d
 	return (
         <Layout>
             <section className={Styles.MydetailsSection}>
@@ -107,11 +46,7 @@ export default function Mydetails() {
                             </Form.Group>
 
                             <Form.Group as={Col} >
-<<<<<<< HEAD
                             <Form.Label>Mobile</Form.Label>
-=======
-                            <Form.Label>mMbile</Form.Label>
->>>>>>> 3aa099a66293d361ced62b674ae8701173594f1d
                             <Form.Control type="text" placeholder="" />
                             </Form.Group>
                         </Row>
@@ -157,11 +92,7 @@ export default function Mydetails() {
                             </div>
 
                                 {/* ... */}
-<<<<<<< HEAD
                                 <Button  variant="primary" type="submitg">
-=======
-                                <Button onClick={() => onSaveChangesClick()} variant="primary" type="submitg">
->>>>>>> 3aa099a66293d361ced62b674ae8701173594f1d
                                     Save Changes
                                 </Button>     
                         </Col>
