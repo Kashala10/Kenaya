@@ -13,7 +13,6 @@ import  productsService from '../services/products.service'
 export default function Shop() {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
-
     
 
     useEffect(() => {
@@ -23,14 +22,12 @@ export default function Shop() {
             console.log(res.data)
             setProducts(res)
             setLoading(false)
-            
         })
         .catch(err => {
             toast.error("Failed to load products");
             console.log(err)
         })
     },[])
-    
 
     const settings = {
         focusOnSelect: true,
@@ -42,8 +39,7 @@ export default function Shop() {
         speed: 500
     }
 
-  
-
+ 
 
 	return (
 		<Layout>
@@ -71,7 +67,7 @@ export default function Shop() {
                                 </Col>
                                 <Col md={3}>
                                     <Form.Label>Collection</Form.Label>
-                                    <Form.Select className={Styles.Collections}  size="lg">
+                                    <Form.Select className={Styles.Collections} size="lg">
                                         <option>All</option>
                                         <option>Oasis</option>
                                         <option>Blossom</option>

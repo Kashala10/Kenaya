@@ -27,7 +27,7 @@ const SignInForm = () => {
                         <a>Forgot your password?</a>
                     </div>
                     <div className="mt-4">
-                        <Button onClick={SignInManualHandler} className="submit-btn" variant="primary" size="lg">
+                        <Button  className="submit-btn" variant="primary" size="lg">
                             Sign In
                         </Button>
                     </div>
