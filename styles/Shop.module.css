@@ -14,9 +14,13 @@
     min-height: 400px;
     max-width: 90%;
     background-color: #C4C4C4;
+    cursor: pointer;
 }
 .ShopSection .ProductContainer .Slide img{
     margin: 24px auto;
+    width: 90%;
+    min-height: 450px;
+    object-fit: cover;
 }
 .ShopSection .ProductContainer .Slide .TagContainer{
     display: flex;
@@ -25,6 +29,15 @@
     margin: 5px auto;
     cursor: pointer;
 }
+.ShopSection .ProductContainer .Slide .TagContainer > div:first-child{
+    width: 50%;
+    text-align: left;
+}
+.ShopSection .ProductContainer .Slide .TagContainer > div:last-child{
+    width: 50%;
+    text-align: right;
+}
+
 .ShopSection .ProductContainer .Slide .TagContainer h3{
     font-family: var(--font-family-poppins);
     font-size: 15px;

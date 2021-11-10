@@ -12,6 +12,7 @@ import Pin from './Pin'
 import GoogleSignIn from './GoogleSignIn'
 import FacebookSignIn from './FacebookSignIn'
 import Bin from './Bin'
+import Heart from './Heart'
 
 
 export { 
@@ -29,4 +30,5 @@ export {
     GoogleSignIn,
     FacebookSignIn,
     Bin,
+    Heart,
 }

@@ -1,14 +1,14 @@
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap'
 import Layout from '../components/Layout'
 import { SignInForm, SignUpForm } from '../components'
-import Styles from '../styles/User.module.css'
+import Styles from '../styles/Auth.module.css'
 
-export default function User() {
+export default function Auth() {
 	return (
 		<Layout>
 			<section className={Styles.UserSection}>
                 <div className={Styles.AuthSections}>
-                    <Tab.Container defaultActiveKey="sign-in">
+                    <Tab.Container  defaultActiveKey="sign-in">
                         <div className="auth-nav">
                             <Nav fill variant="tabs">
                                 <Nav.Item>

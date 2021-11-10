@@ -1,5 +1,6 @@
 import { Container, Row, Col,Table,Button } from 'react-bootstrap'
 import Layout from '../components/Layout'
+import { UserNavbar } from '../components'
 import Styles from '../styles/Myorders.module.css'
 
 
@@ -9,10 +10,10 @@ export default function Myorders() {
 			<section className={Styles.MyordersSection}>
 				<Container>
 					<Row>
-                        <Col>
-                            <div>
-
-                            </div>
+                        <Col md={5}>
+        
+                            <UserNavbar/>
+                          
                         </Col>
                         <Col md={7}> 
                             <Button className={Styles.Back} >Back</Button>

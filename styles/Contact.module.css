@@ -25,7 +25,10 @@
     border-bottom: none;
     border-left: none;
 }
-
+.ContactSection .Lines a{
+    color: var(--brown-color);
+    text-decoration: none;
+}
 .ContactSection .Details svg{
     display: block;
     margin: 10px auto;

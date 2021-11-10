@@ -1,7 +1,10 @@
 import { Row, Col, Button } from 'react-bootstrap'
-import Styles from '../styles/User.module.css'
+import Styles from '../styles/Auth.module.css'
 
 const SignInForm = () => {
+ 
+
+
     return (
         <Row>
             <Col md={6}>
@@ -17,14 +20,14 @@ const SignInForm = () => {
                         <input type="email" className="form-control" placeholder="" />
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="email" className="form-label">Password:</label>
-                        <input type="password" className="form-control" placeholder="" />
+                        <label htmlFor="password" className="form-label">Password:</label>
+                        <input type="password" className="form-control" placeholder="" required/>
                     </div>
                     <div className="mb-3">
                         <a>Forgot your password?</a>
                     </div>
                     <div className="mt-4">
-                        <Button variant="primary" size="lg">
+                        <Button onClick={SignInManualHandler} className="submit-btn" variant="primary" size="lg">
                             Sign In
                         </Button>
                     </div>
