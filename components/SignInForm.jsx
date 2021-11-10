@@ -27,7 +27,11 @@ const SignInForm = () => {
                         <a>Forgot your password?</a>
                     </div>
                     <div className="mt-4">
+<<<<<<< HEAD
                         <Button  className="submit-btn" variant="primary" size="lg">
+=======
+                        <Button onClick={SignInManualHandler} className="submit-btn" variant="primary" size="lg">
+>>>>>>> 3aa099a66293d361ced62b674ae8701173594f1d
                             Sign In
                         </Button>
                     </div>

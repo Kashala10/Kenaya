@@ -5,7 +5,11 @@ import Styles from '../styles/Auth.module.css'
 import { GoogleSignIn, FacebookSignIn  } from './icons'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { GoogleLogin } from 'react-google-login';
+<<<<<<< HEAD
 //import { auth, registerWithEmailAndPassword, signInWithGoogle } from '../firebase/firebase'
+=======
+// import { auth, registerWithEmailAndPassword, signInWithGoogle } from '../firebase/firebase'
+>>>>>>> 3aa099a66293d361ced62b674ae8701173594f1d
 
 
 

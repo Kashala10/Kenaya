@@ -39,7 +39,24 @@ export default function Shop() {
         speed: 500
     }
 
+<<<<<<< HEAD
  
+=======
+    const location = userLocation();
+    console.log(location.pathname.split("/")[2]); 
+
+    const [filter,setFilters]= useState({})
+
+    const handleFilters = (e) =>{
+        const value = e.taget.value;
+        setFilters({
+            [e.target.name]: value,
+        });
+    };
+
+    console.log(filter)
+
+>>>>>>> 3aa099a66293d361ced62b674ae8701173594f1d
 
 	return (
 		<Layout>
@@ -56,7 +73,11 @@ export default function Shop() {
                                 <Col md={3}>
                                     <Form.Group className={Styles.Mb}>
                                         <Form.Label>Shop</Form.Label>
+<<<<<<< HEAD
                                         <Form.Select className={Styles.categories}  size="lg">
+=======
+                                        <Form.Select className={Styles.categories} onChange={handleFilters} size="lg">
+>>>>>>> 3aa099a66293d361ced62b674ae8701173594f1d
                                             <option>All</option>
                                             <option>Dress</option>
                                             <option>Top</option>
@@ -67,7 +88,11 @@ export default function Shop() {
                                 </Col>
                                 <Col md={3}>
                                     <Form.Label>Collection</Form.Label>
+<<<<<<< HEAD
                                     <Form.Select className={Styles.Collections} size="lg">
+=======
+                                    <Form.Select className={Styles.Collections} onChange={handleFilters} size="lg">
+>>>>>>> 3aa099a66293d361ced62b674ae8701173594f1d
                                         <option>All</option>
                                         <option>Oasis</option>
                                         <option>Blossom</option>
